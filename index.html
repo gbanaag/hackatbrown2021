@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title> Vine generator </title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="icon" href="https://i.pinimg.com/originals/ba/92/fe/ba92fe11861df19e26a8be133acc5e10.png"> -->
+    <meta charset="utf-8" />
+    <title>Salmon Cheese</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/33/cheese-wedge_1f9c0.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-      <div id = "generator">
-
-        <center>
+    <canvas id="3" width="1500vw" height="1000vw"></canvas>
+    <div id="generator">
+      <center>
+        <p style="font-weight:bold; font-size: 2vw; padding: 2vw;">
+          Need to be cheered up?
+        </p>
         <div>
-          <button class="button big-button" id = "button"> Click me!</button>        </div>
+          <button class="button big-button" id="button">Click me!</button>
+        </div>
 
-          <div class="vines">
-            <div>
-              <iframe id="video" width="480" height="320" src="https://www.youtube.com/embed/wdMWkOT06iI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p id = "gabby"><i> Created by Gabriela Banaag and David Guo </i></p>
+        <div class="videos">
+          <div>
+            <iframe
+              id="video"
+              width="480"
+              height="320"
+              src="https://www.youtube.com/embed/vXdv9dD2_mM"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
-        </center>
-
-
-      </div>
-      <script src="script.js"></script>
-
+          <p
+            id="vid-name"
+            style="font-weight:bold; font-size: 3vw; padding: 2vw;"
+          ></p>
+          <p id="gabby"><i> Created by Gabriela Banaag and David Guo </i></p>
+        </div>
+      </center>
+    </div>
+    <script src="script.js"></script>
+    <script src="bubbly-bg.js"></script>
+    <script>
+      bubbly({ canvas: document.getElementById("3") });
+    </script>
   </body>
 </html>
